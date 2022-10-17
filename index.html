@@ -18,17 +18,25 @@
       <img src="favicon.svg" alt="logo" srcset="" width="36">
       <span class="fs-2">TranslitMe</span>
     </header>
-    <div class="form-group mb-3">
-      <label for="js-original-text">Текст для транслітерації*</label>
-      <textarea name="original-text" id="js-original-text" class="form-control" rows="10" required></textarea>
-    </div>
-    <button type="button" id="js-start-transliterate" class="btn btn-primary mb-4" onclick="transliterateText()">Транслітерувати</button>
-    <div class="form-group mb-3">
-      <label for="js-original-text">Транслітерований текст</label>
-      <textarea name="trans-text" id="js-trans-text" class="form-control" rows="10"></textarea>
-    </div>
-    <button type="button" id="js-copy-result" class="btn btn-primary mr-2" onclick="copyResults()">Копіювати</button>
-    <span id="js-notification" class="notification">Скопійовано</span>
+    <main>
+      <div class="form-group mb-3">
+        <label for="js-original-text">Текст для транслітерації*</label>
+        <textarea name="original-text" id="js-original-text" class="form-control" rows="10" required></textarea>
+      </div>
+      <button type="button" id="js-start-transliterate" class="btn btn-primary mb-4" onclick="transliterateText()">Транслітерувати</button>
+      <div class="form-group mb-3">
+        <label for="js-original-text">Транслітерований текст</label>
+        <textarea name="trans-text" id="js-trans-text" class="form-control" rows="10"></textarea>
+      </div>
+      <button type="button" id="js-copy-result" class="btn btn-primary mr-2" onclick="copyResults()">Копіювати</button>
+      <span id="js-notification" class="notification">Скопійовано</span>
+    </main>
+    <footer class="py-3 my-4">
+      <p class="text-muted pb-4">
+        Правила транслітерації регламентуються <a href="https://zakon2.rada.gov.ua/laws/show/55-2010-%D0%BF">Постановою Кабінету Міністрів України від 27 січня 2010 р. N 55 (зі змінами)</a>.
+      </p>
+      <p class="border-top pt-2">© 2022 <a href="https://github.com/serhii-tyshchenko" title="Github Profile">Serhii Tyshchenko</p>
+    </footer>
   </div>
   <script src="index.js"></script>
 </body>
