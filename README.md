@@ -1,2 +1,3 @@
-# TransliterateIt
+# TranslitMe
+
 Ukrainian-english transliterator
